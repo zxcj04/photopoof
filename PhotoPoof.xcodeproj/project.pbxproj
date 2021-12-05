@@ -11,6 +11,11 @@
 		030BA63027587FEE002C1AF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030BA62F27587FEE002C1AF8 /* ContentView.swift */; };
 		030BA63227587FF0002C1AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030BA63127587FF0002C1AF8 /* Assets.xcassets */; };
 		030BA63527587FF0002C1AF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030BA63427587FF0002C1AF8 /* Preview Assets.xcassets */; };
+		030BA63C275886D9002C1AF8 /* ImageIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030BA63B275886D9002C1AF8 /* ImageIO.swift */; };
+		030BA63E275887BD002C1AF8 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030BA63D275887BD002C1AF8 /* ImagePickerView.swift */; };
+		03331CFE275BCF3900DC1194 /* MVVMExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03331CFD275BCF3900DC1194 /* MVVMExample.swift */; };
+		03331D03275C552500DC1194 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03331D02275C552500DC1194 /* NoteView.swift */; };
+		035958A3275894A2002AB745 /* PhotoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035958A2275894A2002AB745 /* PhotoEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		030BA62F27587FEE002C1AF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		030BA63127587FF0002C1AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		030BA63427587FF0002C1AF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		030BA63B275886D9002C1AF8 /* ImageIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIO.swift; sourceTree = "<group>"; };
+		030BA63D275887BD002C1AF8 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		03331CFD275BCF3900DC1194 /* MVVMExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMExample.swift; sourceTree = "<group>"; };
+		03331CFF275C41D300DC1194 /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
+		03331D02275C552500DC1194 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		035958A2275894A2002AB745 /* PhotoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +64,14 @@
 			children = (
 				030BA62D27587FEE002C1AF8 /* PhotoPoofApp.swift */,
 				030BA62F27587FEE002C1AF8 /* ContentView.swift */,
+				03331D02275C552500DC1194 /* NoteView.swift */,
+				035958A2275894A2002AB745 /* PhotoEditView.swift */,
+				03331CFF275C41D300DC1194 /* Empty.md */,
+				030BA63D275887BD002C1AF8 /* ImagePickerView.swift */,
+				030BA63B275886D9002C1AF8 /* ImageIO.swift */,
 				030BA63127587FF0002C1AF8 /* Assets.xcassets */,
 				030BA63327587FF0002C1AF8 /* Preview Content */,
+				03331CFD275BCF3900DC1194 /* MVVMExample.swift */,
 			);
 			path = PhotoPoof;
 			sourceTree = "<group>";
@@ -137,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030BA63E275887BD002C1AF8 /* ImagePickerView.swift in Sources */,
+				030BA63C275886D9002C1AF8 /* ImageIO.swift in Sources */,
+				035958A3275894A2002AB745 /* PhotoEditView.swift in Sources */,
 				030BA63027587FEE002C1AF8 /* ContentView.swift in Sources */,
+				03331CFE275BCF3900DC1194 /* MVVMExample.swift in Sources */,
+				03331D03275C552500DC1194 /* NoteView.swift in Sources */,
 				030BA62E27587FEE002C1AF8 /* PhotoPoofApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +294,8 @@
 				DEVELOPMENT_TEAM = 4QSYFFJ3YV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "允許取用相機？";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "是否允許儲存圖片？";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +325,8 @@
 				DEVELOPMENT_TEAM = 4QSYFFJ3YV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "允許取用相機？";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "是否允許儲存圖片？";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
